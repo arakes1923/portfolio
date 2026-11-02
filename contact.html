@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Aravindh</title>
+  <meta name="description" content="Get in touch with Aravindh for branding, UI/UX, packaging and motion design projects.">
+
+  <!-- Apply saved theme before paint -->
+  <script>try{var t=localStorage.getItem("theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+
+  <!-- Common head (head.html) -->
+  <script>
+    document.documentElement.style.visibility = "hidden"; // hide until style.css loads
+    const showPage = () => (document.documentElement.style.visibility = "");
+    fetch("head.html")
+      .then((res) => res.text())
+      .then((html) => {
+        document.head.insertAdjacentHTML("beforeend", html);
+        const css = document.querySelector('link[href="assets/css/style.css"]');
+        css.onload = css.onerror = showPage;
+      })
+      .catch(showPage);
+  </script>
+</head>
+<body>
+
+  <div class="preloader">
+    <div class="preloader-inner">
+      <span class="loader-logo">RV<span>.</span></span>
+      <div class="loader-bar"><span></span></div>
+    </div>
+  </div>
+
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+  <div class="grain"></div>
+
+  <div id="nav"></div>
+
+  <main>
+    <!-- ================= PAGE HEADER ================= -->
+    <section class="page-header">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <span class="bg-word">CONTACT</span>
+      <div class="container">
+        <span class="eyebrow">Say Hello</span>
+        <h1>Get in <span class="text-grad">Touch</span></h1>
+        <ul class="breadcrumb-c">
+          <li><a href="index.html">Home</a></li>
+          <li><i class="bi bi-chevron-right"></i></li>
+          <li class="current">Contact</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ================= INFO CARDS ================= -->
+    <section class="section-pad-sm pt-0">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="0">
+            <div class="contact-card">
+              <div class="c-icon"><i class="bi bi-telephone"></i></div>
+              <h5>Call Me</h5>
+              <p><a href="tel:+919345369440">+91 93453 69440</a></p>
+              <p>Mon – Sat, 10am – 7pm</p>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="contact-card">
+              <div class="c-icon"><i class="bi bi-envelope"></i></div>
+              <h5>Email Me</h5>
+              <p><a href="mailto:aravindhkudy@gmail.com">aravindhkudy@gmail.com</a></p>
+              <p>Reply within 24 hours</p>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="contact-card">
+              <div class="c-icon"><i class="bi bi-geo-alt"></i></div>
+              <h5>Location</h5>
+              <p>Tiruppur, Tamil Nadu,</p>
+              <p>India</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FORM ================= -->
+    <section class="section-pad">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-8" data-aos="fade-right">
+            <div class="form-wrap">
+              <span class="eyebrow">Start a Project</span>
+              <h2 class="section-title" style="font-size:clamp(1.8rem,3.5vw,2.6rem)">Tell me about your <span class="text-grad">idea</span></h2>
+              <p class="text-muted-c mb-4">Fill in the form and I'll get back to you with a quote and timeline.</p>
+
+              <form id="contactForm" class="row g-3" novalidate>
+                <div class="col-md-6">
+                  <div class="form-floating">
+                    <input type="text" class="form-control" id="cName" placeholder="Your Name" required minlength="2">
+                    <label for="cName">Your Name *</label>
+                    <div class="invalid-feedback">Please enter your name.</div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-floating">
+                    <input type="email" class="form-control" id="cEmail" placeholder="Email" required>
+                    <label for="cEmail">Email Address *</label>
+                    <div class="invalid-feedback">Please enter a valid email.</div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-floating">
+                    <input type="tel" class="form-control" id="cPhone" placeholder="Phone" pattern="[0-9+\s\-]{7,15}">
+                    <label for="cPhone">Phone Number</label>
+                    <div class="invalid-feedback">Please enter a valid phone number.</div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-floating">
+                    <select class="form-select" id="cService" required>
+                      <option value="" selected disabled>Choose...</option>
+                      <option>Brand Identity</option>
+                      <option>UI / UX Design</option>
+                      <option>Print &amp; Packaging</option>
+                      <option>Illustration</option>
+                      <option>Motion Graphics</option>
+                      <option>Other</option>
+                    </select>
+                    <label for="cService">Service Needed *</label>
+                    <div class="invalid-feedback">Please choose a service.</div>
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <label class="form-label fw-semibold mb-2">Project Budget</label>
+                  <div class="budget-group">
+                    <input type="radio" name="budget" id="b1" value="<25k"><label for="b1">&lt; ₹25K</label>
+                    <input type="radio" name="budget" id="b2" value="25k-75k" checked><label for="b2">₹25K – ₹75K</label>
+                    <input type="radio" name="budget" id="b3" value="75k-2L"><label for="b3">₹75K – ₹2L</label>
+                    <input type="radio" name="budget" id="b4" value="2L+"><label for="b4">₹2L +</label>
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <div class="form-floating">
+                    <textarea class="form-control" id="cMsg" placeholder="Message" required minlength="10"></textarea>
+                    <label for="cMsg">Your Message *</label>
+                    <div class="invalid-feedback">Please write at least 10 characters.</div>
+                  </div>
+                </div>
+
+                <div class="col-12 d-flex flex-wrap align-items-center justify-content-between gap-3 mt-4">
+                  <small class="text-muted-c"><i class="bi bi-shield-lock"></i> Your details are safe and never shared.</small>
+                  <button type="submit" class="btn-accent magnetic">Send Message <i class="bi bi-send"></i></button>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <div class="col-lg-4" data-aos="fade-left">
+            <div class="contact-side">
+              <span class="cta-circle" style="width:260px;height:260px;top:-120px;right:-100px"></span>
+              <span class="cta-circle" style="width:180px;height:180px;bottom:-80px;left:-60px"></span>
+              <div class="position-relative">
+                <h3>Let's make something great together.</h3>
+                <p>Currently booking projects for <strong>December 2026</strong>. Slots fill fast!</p>
+                <ul class="side-list">
+                  <li><i class="bi bi-check2-circle"></i><span>Free 30-min discovery call</span></li>
+                  <li><i class="bi bi-check2-circle"></i><span>Clear quote within 24 hours</span></li>
+                  <li><i class="bi bi-check2-circle"></i><span>3 rounds of revisions included</span></li>
+                  <li><i class="bi bi-check2-circle"></i><span>All source files delivered</span></li>
+                </ul>
+                <h6 class="text-white mb-3">Follow my work</h6>
+                <div class="social-links">
+                  <a href="https://www.behance.net/aravindaravind136" target="_blank" rel="noopener noreferrer" aria-label="Behance"><i class="bi bi-behance"></i></a>
+                  <a href="https://www.instagram.com/rv__cryptic_soul" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                  <a href="https://www.linkedin.com/in/aravindh-aravindh-47143b2a8" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                  <a href="https://wa.me/919345369440" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= MAP ================= -->
+    <section class="section-pad-sm pt-0">
+      <div class="container">
+        <div class="map-wrap" data-aos="fade-up">
+          <iframe src="https://maps.google.com/maps?q=Tiruppur%2C%20Tamil%20Nadu&t=&z=14&ie=UTF8&iwloc=&output=embed" loading="lazy" title="Studio location" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FAQ ================= -->
+    <section class="section-pad">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-4" data-aos="fade-up">
+            <span class="eyebrow">FAQ</span>
+            <h2 class="section-title">Questions? <span class="text-grad">Answers.</span></h2>
+            <p class="text-muted-c">Can't find what you're looking for? Just drop me a message.</p>
+          </div>
+          <div class="col-lg-8" data-aos="fade-up" data-aos-delay="100">
+            <div class="accordion accordion-c" id="faq">
+              <div class="accordion-item">
+                <h2 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#q1">How long does a branding project take?</button></h2>
+                <div id="q1" class="accordion-collapse collapse show" data-bs-parent="#faq"><div class="accordion-body">A complete brand identity usually takes 3–6 weeks depending on scope. A logo-only project can be done in 1–2 weeks.</div></div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q2">What do you need from me to get started?</button></h2>
+                <div id="q2" class="accordion-collapse collapse" data-bs-parent="#faq"><div class="accordion-body">A short brief about your business, target audience, competitors and any references you like. I'll send a simple questionnaire to guide you.</div></div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q3">How does payment work?</button></h2>
+                <div id="q3" class="accordion-collapse collapse" data-bs-parent="#faq"><div class="accordion-body">50% advance to book the slot and 50% before final file delivery. I accept bank transfer, UPI and PayPal for international clients.</div></div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q4">Do you work with international clients?</button></h2>
+                <div id="q4" class="accordion-collapse collapse" data-bs-parent="#faq"><div class="accordion-body">Yes! I've worked with clients in 14 countries. We'll communicate over email, Slack or video calls in your time zone.</div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer"></div>
+
+  <button class="back-to-top" aria-label="Back to top">
+    <svg viewBox="0 0 54 54">
+      <defs><linearGradient id="btGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#ff5e3a"/><stop offset="100%" stop-color="#7b5cff"/></linearGradient></defs>
+      <circle class="track" cx="27" cy="27" r="25"/>
+      <circle class="bt-progress" cx="27" cy="27" r="25"/>
+    </svg>
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <div class="toast-c"><i class="bi bi-check-circle-fill"></i><span class="toast-msg"></span></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <!-- Common nav (nav.html) + footer (footer.html), then main.js -->
+  <script>
+    const include = (id, file) =>
+      fetch(file)
+        .then((res) => res.text())
+        .then((html) => (document.getElementById(id).outerHTML = html));
+
+    Promise.allSettled([include("nav", "nav.html"), include("footer", "footer.html")]).then(() => {
+      // highlight the current page in the nav
+      const page = location.pathname.split("/").pop() || "index.html";
+      document.querySelectorAll(".site-nav .nav-link").forEach((link) => {
+        link.classList.toggle("active", link.getAttribute("href") === page);
+      });
+
+      const s = document.createElement("script");
+      s.src = "assets/js/main.js";
+      document.body.appendChild(s);
+    });
+  </script>
+</body>
+</html>

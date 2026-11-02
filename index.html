@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aravindh Sethu | Graphic Designer</title>
+  <meta name="description" content="Aravindh Sethu — Chennai based graphic designer crafting brand identities, UI/UX, packaging and motion graphics.">
+
+  <!-- Apply saved theme before paint -->
+  <script>try{var t=localStorage.getItem("theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+
+  <!-- Page-specific -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11.1.14/swiper-bundle.min.css">
+
+  <!-- Common head (head.html) -->
+  <script>
+    document.documentElement.style.visibility = "hidden"; // hide until style.css loads
+    const showPage = () => (document.documentElement.style.visibility = "");
+    fetch("head.html")
+      .then((res) => res.text())
+      .then((html) => {
+        document.head.insertAdjacentHTML("beforeend", html);
+        const css = document.querySelector('link[href="assets/css/style.css"]');
+        css.onload = css.onerror = showPage;
+      })
+      .catch(showPage);
+  </script>
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div class="preloader">
+    <div class="preloader-inner">
+      <span class="loader-logo">RV<span>.</span></span>
+      <div class="loader-bar"><span></span></div>
+    </div>
+  </div>
+
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+  <div class="grain"></div>
+
+  <div id="nav"></div>
+
+  <main>
+    <!-- ================= HERO ================= -->
+    <section class="hero">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+      <span class="shape shape-ring"></span>
+      <span class="shape shape-plus"><i class="bi bi-plus-lg"></i></span>
+      <span class="shape shape-square"></span>
+
+      <div class="container">
+        <div class="row ">
+          <div class="col-lg-7">
+            <div class="hero-badge"><span class="live-dot"></span> Available for freelance projects</div>
+            <h1 class="hero-title">
+              <span class="line"><span>Designing</span></span>
+              <span class="line"><span class="text-grad">bold brands</span></span>
+              <span class="line"><span>that <span class="text-outline">speak.</span></span></span>
+            </h1>
+            <div class="hero-typed">I'm Aravindh — <span id="typed" class="text-grad"></span></div>
+            <p class="hero-text">I help startups and growing businesses stand out with thoughtful visual identities, delightful interfaces and print that people actually keep.</p>
+            <div class="hero-btns d-flex flex-wrap gap-3">
+              <a href="portfolio.html" class="btn-accent magnetic">View My Work <i class="bi bi-arrow-right"></i></a>
+              <a href="./assets/resume/Bakkiyamcv.pdf" target="_blank" class="btn-ghost magnetic"><i class="bi bi-download" style="transform:none"></i> Download CV</a>
+            </div>
+            <div class="hero-meta">
+              <div><h3><span data-count="3">0</span>+</h3><p>Years Experience</p></div>
+              <div><h3><span data-count="30">0</span>+</h3><p>Projects Done</p></div>
+              <div><h3><span data-count="20">0</span>+</h3><p>Happy Clients</p></div>
+            </div>
+          </div>
+
+          <div class="col-lg-5 mt-5">
+            <div class="hero-visual">
+              <div class="rotate-badge">
+                <svg viewBox="0 0 100 100">
+                  <defs><path id="circlePath" d="M 50,50 m -37,0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0"></path></defs>
+                  <text><textPath href="#circlePath">Creative Designer • Since 2017 •</textPath></text>
+                </svg>
+                <i class="bi bi-stars"></i>
+              </div>
+              <div class="hero-img-wrap">
+                <img src="https://res.cloudinary.com/duomzq5mm/image/upload/v1793342103/WhatsApp_Image_2026-10-30_at_12.03.38_hwkutz.jpg" alt="Aravindh Sethu portrait">
+              </div>
+              <div class="float-card fc-1">
+                <span class="ic"><i class="bi bi-palette"></i></span>
+                <div><strong>Brand Identity</strong><small>Logo &amp; Guidelines</small></div>
+              </div>
+              <div class="float-card fc-2">
+                <span class="ic"><i class="bi bi-award"></i></span>
+                <div><strong>18 Awards</strong><small>Design excellence</small></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#services" class="scroll-down"><span class="mouse"></span>Scroll</a>
+    </section>
+
+    <!-- ================= MARQUEE ================= -->
+    <div class="marquee">
+      <div class="marquee-track">
+        <div class="marquee-item">Branding <i class="bi bi-asterisk"></i> UI / UX <i class="bi bi-asterisk"></i> Packaging <i class="bi bi-asterisk"></i> Illustration <i class="bi bi-asterisk"></i> Motion <i class="bi bi-asterisk"></i> Print <i class="bi bi-asterisk"></i></div>
+        <div class="marquee-item">Branding <i class="bi bi-asterisk"></i> UI / UX <i class="bi bi-asterisk"></i> Packaging <i class="bi bi-asterisk"></i> Illustration <i class="bi bi-asterisk"></i> Motion <i class="bi bi-asterisk"></i> Print <i class="bi bi-asterisk"></i></div>
+      </div>
+    </div>
+    <div class="marquee alt">
+      <div class="marquee-track">
+        <div class="marquee-item">Creative Thinking <i class="bi bi-star-fill"></i> Pixel Perfect <i class="bi bi-star-fill"></i> On-Time Delivery <i class="bi bi-star-fill"></i> Unlimited Ideas <i class="bi bi-star-fill"></i></div>
+        <div class="marquee-item">Creative Thinking <i class="bi bi-star-fill"></i> Pixel Perfect <i class="bi bi-star-fill"></i> On-Time Delivery <i class="bi bi-star-fill"></i> Unlimited Ideas <i class="bi bi-star-fill"></i></div>
+      </div>
+    </div>
+
+    <!-- ================= SERVICES ================= -->
+    <section class="section-pad" id="services">
+      <div class="container">
+        <div class="row align-items-end mb-5 g-4">
+          <div class="col-lg-7" data-aos="fade-up">
+            <span class="eyebrow">What I Do</span>
+            <h2 class="section-title">Services crafted to make<br>your brand <span class="text-grad">unforgettable</span></h2>
+          </div>
+          <div class="col-lg-5" data-aos="fade-up" data-aos-delay="100">
+            <p class="section-lead mb-0">From the first sketch to the final file, every project gets strategy, craft and a lot of coffee.</p>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="0">
+            <div class="service-card">
+              <span class="service-num">01</span>
+              <div class="service-icon"><i class="bi bi-vector-pen"></i></div>
+              <h4>Brand Identity</h4>
+              <p>Logos, color systems, typography and brand guidelines that feel uniquely yours.</p>
+              <a href="portfolio.html" class="service-link">Learn more <i class="bi bi-arrow-up-right"></i></a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-card">
+              <span class="service-num">02</span>
+              <div class="service-icon"><i class="bi bi-phone"></i></div>
+              <h4>UI / UX Design</h4>
+              <p>Clean, intuitive interfaces for websites and mobile apps that users love.</p>
+              <a href="portfolio.html" class="service-link">Learn more <i class="bi bi-arrow-up-right"></i></a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-card">
+              <span class="service-num">03</span>
+              <div class="service-icon"><i class="bi bi-box-seam"></i></div>
+              <h4>Print &amp; Packaging</h4>
+              <p>Packaging, brochures and posters designed to grab attention on the shelf.</p>
+              <a href="portfolio.html" class="service-link">Learn more <i class="bi bi-arrow-up-right"></i></a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-card">
+              <span class="service-num">04</span>
+              <div class="service-icon"><i class="bi bi-camera-reels"></i></div>
+              <h4>Motion Graphics</h4>
+              <p>Animated logos, social reels and explainer videos that bring ideas to life.</p>
+              <a href="portfolio.html" class="service-link">Learn more <i class="bi bi-arrow-up-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SELECTED WORKS ================= -->
+    <section class="section-pad bg-alt">
+      <div class="container">
+        <div class="d-flex flex-wrap justify-content-between align-items-end gap-4 mb-5">
+          <div data-aos="fade-up">
+            <span class="eyebrow">Selected Works</span>
+            <h2 class="section-title mb-0">Recent <span class="text-grad">projects</span></h2>
+          </div>
+          <a href="portfolio.html" class="btn-ghost magnetic" data-aos="fade-up">See All Works <i class="bi bi-arrow-right"></i></a>
+        </div>
+
+        <div class="row g-4 works-grid">
+          <div class="col-lg-7" data-aos="fade-up">
+            <a href="portfolio.html" class="work-card">
+              <div class="work-img"><img src="assets/images/portfolio/portfolio-2.jpeg" alt="Aloe Vera Skincare Banner" loading="lazy"></div>
+              <div class="work-overlay"><span class="tag">Web Banners</span><h5>Aloe Vera Skincare Banner</h5></div>
+              <span class="work-arrow"><i class="bi bi-arrow-up-right"></i></span>
+            </a>
+          </div>
+          <div class="col-lg-5" data-aos="fade-up" data-aos-delay="100">
+            <a href="portfolio.html" class="work-card">
+              <div class="work-img"><img src="assets/images/portfolio/portfolio-11.jpeg" alt="Happy Ayudha Pooja — Vaithiyar Poova" loading="lazy"></div>
+              <div class="work-overlay"><span class="tag">Festival Posts</span><h5>Happy Ayudha Pooja — Vaithiyar Poova</h5></div>
+              <span class="work-arrow"><i class="bi bi-arrow-up-right"></i></span>
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-4" data-aos="fade-up">
+            <a href="portfolio.html" class="work-card">
+              <div class="work-img"><img src="assets/images/portfolio/portfolio-19.jpeg" alt="Gramiyam Herbal Soap" loading="lazy"></div>
+              <div class="work-overlay"><span class="tag">Packaging</span><h5>Gramiyam Herbal Soap</h5></div>
+              <span class="work-arrow"><i class="bi bi-arrow-up-right"></i></span>
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <a href="portfolio.html" class="work-card">
+              <div class="work-img"><img src="assets/images/portfolio/portfolio-23.jpeg" alt="Leo Coffee" loading="lazy"></div>
+              <div class="work-overlay"><span class="tag">Product Ads</span><h5>Leo Coffee</h5></div>
+              <span class="work-arrow"><i class="bi bi-arrow-up-right"></i></span>
+            </a>
+          </div>
+          <div class="col-md-12 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <a href="portfolio.html" class="work-card">
+              <div class="work-img"><img src="assets/images/portfolio/portfolio-33.jpeg" alt="Kalyan Jewellers Press Ad" loading="lazy"></div>
+              <div class="work-overlay"><span class="tag">Print &amp; Signage</span><h5>Kalyan Jewellers Press Ad</h5></div>
+              <span class="work-arrow"><i class="bi bi-arrow-up-right"></i></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= STATS ================= -->
+    <section class="section-pad-sm">
+      <div class="container">
+        <div class="stats-wrap" data-aos="zoom-in">
+          <div class="blob blob-1" style="width:260px;height:260px;opacity:.2"></div>
+          <div class="row g-4 stats-row position-relative">
+            <div class="col-6 col-md-4"><div class="stat-item"><h2 class="text-grad"><span data-count="3">0</span>+</h2><p>Years of Experience</p></div></div>
+            <div class="col-6 col-md-4"><div class="stat-item"><h2 class="text-grad"><span data-count="30">0</span>+</h2><p>Projects Completed</p></div></div>
+            <div class="col-6 col-md-4"><div class="stat-item"><h2 class="text-grad"><span data-count="20">0</span>+</h2><p>Satisfied Clients</p></div></div>
+            <!-- <div class="col-6 col-md-3"><div class="stat-item"><h2 class="text-grad"><span data-count="18">0</span></h2><p>Design Awards</p></div></div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROCESS ================= -->
+    <section class="section-pad">
+      <div class="container">
+        <div class="section-head text-center mb-5" data-aos="fade-up">
+          <span class="eyebrow">How I Work</span>
+          <h2 class="section-title">A simple <span class="text-grad">4-step</span> process</h2>
+          <p class="section-lead">Clear steps, regular check-ins and zero surprises — from kickoff to final delivery.</p>
+        </div>
+        <div class="row g-5 position-relative">
+          <div class="process-line"></div>
+          <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="0">
+            <div class="process-step">
+              <div class="step-circle"><span class="step-no">01</span><i class="bi bi-chat-dots"></i></div>
+              <h5>Discover</h5>
+              <p>We talk about your goals, audience and competitors to find the right direction.</p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="process-step">
+              <div class="step-circle"><span class="step-no">02</span><i class="bi bi-lightbulb"></i></div>
+              <h5>Ideate</h5>
+              <p>Moodboards, sketches and concepts — exploring many ideas before choosing one.</p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+            <div class="process-step">
+              <div class="step-circle"><span class="step-no">03</span><i class="bi bi-brush"></i></div>
+              <h5>Design</h5>
+              <p>The chosen concept is refined pixel by pixel with your feedback at every stage.</p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+            <div class="process-step">
+              <div class="step-circle"><span class="step-no">04</span><i class="bi bi-rocket-takeoff"></i></div>
+              <h5>Deliver</h5>
+              <p>Final files, guidelines and support so your brand launches with confidence.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= TESTIMONIALS ================= -->
+    <section class="section-pad bg-alt">
+      <div class="container">
+        <div class="section-head text-center mb-5" data-aos="fade-up">
+          <span class="eyebrow">Testimonials</span>
+          <h2 class="section-title">What clients <span class="text-grad">say</span></h2>
+        </div>
+
+        <div class="swiper testimonial-swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="testimonial-card">
+                <i class="bi bi-quote quote-ic text-grad"></i>
+                <div class="stars">★★★★★</div>
+                <p>"Aravindh gave our bakery a completely fresh look. After the new social media posts, our Instagram orders went up within a few weeks."</p>
+                <div class="t-author"><img src="assets/images/avatar-male.svg" alt="Client"><div><h6>Senthil Kumar</h6><small>Founder, Kongu Fresh Bakes</small></div></div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonial-card">
+                <i class="bi bi-quote quote-ic text-grad"></i>
+                <div class="stars">★★★★★</div>
+                <p>"Super responsive, full of ideas and always on time. Every festival post he designed for us looked better than the big brands."</p>
+                <div class="t-author"><img src="assets/images/avatar-female.svg" alt="Client"><div><h6>Kavya Murugan</h6><small>Owner, Thendral Organics</small></div></div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonial-card">
+                <i class="bi bi-quote quote-ic text-grad"></i>
+                <div class="stars">★★★★★</div>
+                <p>"The packaging design flew off the shelves. Retailers literally asked us who designed it. Highly recommended!"</p>
+                <div class="t-author"><img src="assets/images/avatar-male.svg" alt="Client"><div><h6>Karthikeyan Ramasamy</h6><small>CEO, Mann Vasanai Foods</small></div></div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonial-card">
+                <i class="bi bi-quote quote-ic text-grad"></i>
+                <div class="stars">★★★★★</div>
+                <p>"Working with Aravindh felt like having an in-house creative team. Every detail was thought through."</p>
+                <div class="t-author"><img src="assets/images/avatar-female.svg" alt="Client"><div><h6>Divya Subramani</h6><small>Marketing Head, Nila Textiles</small></div></div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CTA ================= -->
+    <section class="section-pad">
+      <div class="container">
+        <div class="cta-box" data-aos="zoom-in">
+          <span class="cta-circle c1"></span><span class="cta-circle c2"></span><span class="cta-circle c3"></span>
+          <h2>Have a project in mind?<br>Let's create magic.</h2>
+          <p>Tell me about your idea and I'll get back to you within 24 hours with a plan.</p>
+          <a href="contact.html" class="btn-light-c magnetic">Start a Project <i class="bi bi-arrow-up-right"></i></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer"></div>
+
+  <!-- Back to top -->
+  <button class="back-to-top" aria-label="Back to top">
+    <svg viewBox="0 0 54 54">
+      <defs><linearGradient id="btGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#ff5e3a"/><stop offset="100%" stop-color="#7b5cff"/></linearGradient></defs>
+      <circle class="track" cx="27" cy="27" r="25"/>
+      <circle class="bt-progress" cx="27" cy="27" r="25"/>
+    </svg>
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <div class="toast-c"><i class="bi bi-check-circle-fill"></i><span class="toast-msg"></span></div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11.1.14/swiper-bundle.min.js"></script>
+  <!-- Common nav (nav.html) + footer (footer.html), then main.js -->
+  <script>
+    const include = (id, file) =>
+      fetch(file)
+        .then((res) => res.text())
+        .then((html) => (document.getElementById(id).outerHTML = html));
+
+    Promise.allSettled([include("nav", "nav.html"), include("footer", "footer.html")]).then(() => {
+      // highlight the current page in the nav
+      const page = location.pathname.split("/").pop() || "index.html";
+      document.querySelectorAll(".site-nav .nav-link").forEach((link) => {
+        link.classList.toggle("active", link.getAttribute("href") === page);
+      });
+
+      const s = document.createElement("script");
+      s.src = "assets/js/main.js";
+      document.body.appendChild(s);
+    });
+  </script>
+</body>
+</html>

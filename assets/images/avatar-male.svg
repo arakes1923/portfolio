@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Male client">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ff5e3a"/>
+      <stop offset="100%" stop-color="#7b5cff"/>
+    </linearGradient>
+  </defs>
+  <rect width="120" height="120" fill="url(#g)"/>
+  <g fill="#fff" fill-opacity=".92">
+    <!-- shoulders -->
+    <path d="M18 120c0-26 18-40 42-40s42 14 42 40z"/>
+    <!-- neck -->
+    <rect x="52" y="64" width="16" height="18" rx="6"/>
+    <!-- head -->
+    <circle cx="60" cy="46" r="21"/>
+  </g>
+  <!-- short hair -->
+  <path d="M38 44c0-16 10-25 22-25s22 9 22 25c-4-7-10-10-22-10s-18 3-22 10z" fill="#fff"/>
+</svg>

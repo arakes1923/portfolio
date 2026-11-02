@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Vikram Sethu</title>
+  <meta name="description" content="Selected branding, UI/UX, packaging, print, illustration and motion work by Vikram Sethu.">
+
+  <!-- Apply saved theme before paint -->
+  <script>try{var t=localStorage.getItem("theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+
+  <!-- Page-specific -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox@3.3.0/dist/css/glightbox.min.css">
+
+  <!-- Common head (head.html) -->
+  <script>
+    document.documentElement.style.visibility = "hidden"; // hide until style.css loads
+    const showPage = () => (document.documentElement.style.visibility = "");
+    fetch("head.html")
+      .then((res) => res.text())
+      .then((html) => {
+        document.head.insertAdjacentHTML("beforeend", html);
+        const css = document.querySelector('link[href="assets/css/style.css"]');
+        css.onload = css.onerror = showPage;
+      })
+      .catch(showPage);
+  </script>
+</head>
+<body>
+
+  <div class="preloader">
+    <div class="preloader-inner">
+      <span class="loader-logo">RV<span>.</span></span>
+      <div class="loader-bar"><span></span></div>
+    </div>
+  </div>
+
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+  <div class="grain"></div>
+
+  <div id="nav"></div>
+
+  <main>
+    <!-- ================= PAGE HEADER ================= -->
+    <section class="page-header">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <span class="bg-word">PORTFOLIO</span>
+      <div class="container">
+        <span class="eyebrow">Selected Works</span>
+        <h1>My <span class="text-grad">Portfolio</span></h1>
+        <ul class="breadcrumb-c">
+          <li><a href="index.html">Home</a></li>
+          <li><i class="bi bi-chevron-right"></i></li>
+          <li class="current">Portfolio</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ================= FEATURED PROJECT ================= -->
+    <section class="section-pad pt-0">
+      <div class="container">
+        <div class="featured-project" data-aos="fade-up">
+          <div class="row g-0">
+            <div class="col-lg-6">
+              <div class="fp-img"><img src="assets/images/aravinth-3.jpeg" alt="Aravindh with camera" width="960" height="1280" style="object-position:center 30%"></div>
+            </div>
+            <div class="col-lg-6 d-flex align-items-center">
+              <div class="fp-body">
+                <span class="eyebrow">Featured Case Study</span>
+                <h2 class="section-title" style="font-size:clamp(1.8rem,3.5vw,2.8rem)">Aura Coffee Co. — <span class="text-grad">Complete Rebrand</span></h2>
+                <p class="text-muted-c">A warm, modern identity for a specialty coffee chain expanding across South India — logo, packaging, menu boards, cups and an Instagram-ready content kit.</p>
+                <div class="fp-tags"><span>Branding</span><span>Packaging</span><span>Signage</span><span>Social Media</span></div>
+                <div class="fp-stats">
+                  <div><h4 class="text-grad"><span data-count="12">0</span></h4><small>Outlets</small></div>
+                  <div><h4 class="text-grad"><span data-count="3">0</span>x</h4><small>Footfall</small></div>
+                  <div><h4 class="text-grad"><span data-count="6">0</span>wk</h4><small>Timeline</small></div>
+                </div>
+                <a href="https://picsum.photos/seed/featured-brand/1600/1100" class="btn-accent magnetic glightbox" data-title="Aura Coffee Co." data-description="Complete rebrand — Branding, Packaging, Signage">View Case Study <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= GRID ================= -->
+    <section class="section-pad bg-alt">
+      <div class="container">
+        <div class="section-head text-center mb-5" data-aos="fade-up">
+          <span class="eyebrow">Explore</span>
+          <h2 class="section-title">All <span class="text-grad">Projects</span></h2>
+          <p class="section-lead">Filter by category and click any project to view it larger.</p>
+        </div>
+
+        <div class="filter-bar" data-aos="fade-up">
+          <button class="filter-btn active" data-filter="*">All <span class="count"></span></button>
+          <button class="filter-btn" data-filter=".festival">Festival Posts <span class="count"></span></button>
+          <button class="filter-btn" data-filter=".social">Product Ads <span class="count"></span></button>
+          <button class="filter-btn" data-filter=".banner">Web Banners <span class="count"></span></button>
+          <button class="filter-btn" data-filter=".packaging">Packaging <span class="count"></span></button>
+          <button class="filter-btn" data-filter=".print">Print &amp; Signage <span class="count"></span></button>
+          <button class="filter-btn" data-filter=".logo">Logo Design <span class="count"></span></button>
+        </div>
+
+        <div class="portfolio-grid">
+          <div class="grid-sizer"></div>
+
+          <div class="grid-item social">
+            <a href="assets/images/portfolio/portfolio-1.jpeg" class="work-card glightbox" data-gallery="portfolio" data-title="Apple Fresh Infused Water" data-description="Product Ads · Wasil Design">
+              <div class="work-img"><img src="assets/images/portfolio/portfolio-1.jpeg" alt="Apple Fresh Infused Water — Wasil Design" width="735" height="1105" loading="lazy"></div>
+              <div class="work-overlay"><span class="tag">Product Ads</span><div class="work-meta"><h5>Apple Fresh Infused Water</h5><small>Wasil Design</small></div></div>
+            </a>
+          </div>
+
+          <div class="grid-item banner">
+            <a href="assets/images/portfolio/portfolio-2.jpeg" class="work-card glightbox" data-gallery="portfolio" data-title="Aloe Vera Skincare Banner" data-description="Web Banners · Skincare">
+              <div class="work-img"><img src="assets/images/portfolio/portfolio-2.jpeg" alt="Aloe Vera Skincare Banner — Skincare" width="1600" height="899" loading="lazy"></div>
+              <div class="work-overlay"><span class="tag">Web Banners</span><div class="work-meta"><h5>Aloe Vera Skincare Banner</h5><small>Skincare</small></div></div>
+            </a>
+          </div>
+
+          <div class="grid-item festival">
+            <a href="assets/images/portfolio/portfolio-3.jpeg" class="work-card glightbox" data-gallery="portfolio" data-title="Happy Diwali" data-description="Festival Posts · Gramiyam">
+              <div class="work-img"><img src="assets/images/portfolio/portfolio-3.jpeg" alt="Happy Diwali — Gramiyam" width="1080" height="1354" loading="lazy"></div>
+              <div class="work-overlay"><span class="tag">Festival Posts</span><div class="work-meta"><h5>Happy Diwali</h5><small>Gramiyam</small></div></div>
+            </a>
+          </div>
+
+          <div class="grid-item social">
+            <a href="assets/images/portfolio/portfolio-4.jpeg" class="work-card glightbox" data-gallery="portfolio" data-title="Plant Protein Ingredients" data-description="Product Ads · Merry">
+              <div class="work-img"><img src="assets/images/portfolio/portfolio-4.jpeg" alt="Plant Protein Ingredients — Merry" width="736" height="736" loading="lazy"></div>
+              <div class="work-overlay"><span class="tag">Product Ads</span><div class="work-meta"><h5>Plant Protein Ingredients</h5><small>Merry</small></div></div>
+            </a>
+          </div>
+
+          <div class="grid-item festival">
+            <a href="assets/images/portfolio/portfolio-5.jpeg" class="work-card glightbox" data-gallery="portfolio" data-title="Diwali with Grandma" data-description="Festival Posts · Gramiyam">
+              <div class="work-img"><img src="assets/images/portfolio/portfolio-5.jpeg" alt="Diwali with Grandma — Gramiyam" width="1080" height="1354" loading="lazy"></div>
+              <div class="work-overlay"><span class="tag">Festival Posts</span><div class="work-meta"><h5>Diwali with Grandma</h5><small>Gramiyam</small></div></div>
+            </a>
+          </div>
+
+          <div class="grid-item social">
+            <a href="assets/images/portfolio/portfolio-6.jpeg" class="work-card glightbox" data-gallery="portfolio" data-title="Panch Mewa Mix" data-description="Product Ads · The Flavour Farm">
+              <div class="work-img"><img src="assets/images/portfolio/portfolio-6.jpeg" alt="Panch Mewa Mix — The Flavour Farm" width="1200" height="1500" loading="lazy"></div>
+              <div class="work-overlay"><span class="tag">Product Ads</span><div class="work-meta"><h5>Panch Mewa Mix</h5><small>The Flavour Farm</small></div></div>
+            </a>
+          </div>
+
+          <div class="grid-item banner">
+            <a href="assets/images/portfolio/portfolio-7.jpeg" class="work-card glightbox" data-gallery="portfolio" data-title="Bold Typography Posts" data-description="Web Banners · Social Series">
+              <div class="work-img"><img src="assets/images/portfolio/portfolio-7.jpeg" alt="Bold Typography Posts — Social Series" width="1600" height="539" loading="lazy"></div>
+              <div class="work-overlay"><span class="tag">Web Banners</span><div class="work-meta"><h5>Bold Typography Posts</h5><small>Social Series</small></div></div>
+            </a>
+          </div>
+
+          <div class="grid-item banner">
+            <a href="assets/images/portfolio/portfolio-8.jpeg" class="work-card glightbox" data-gallery="portfolio" data-title="Crafted for Indulgence" data-description="Web Banners · Anantam">
+              <div class="work-img"><img src="assets/images/portfolio/portfolio-8.jpeg" alt="Crafted for Indulgence — Anantam" width="1600" height="266" loading="lazy"></div>
+              <div class="work-overlay"><span class="tag">Web Banners</span><div class="work-meta"><h5>Crafted for Indulgence</h5><small>Anantam</small></div></div>
+            </a>
+          </div>
+
+          <div class="grid-item banner">
+            <a href="assets/images/portfolio/portfolio-9.jpeg" class="work-card glightbox" data-gallery="portfolio" data-title="Siddha Wellness Banner" data-description="Web Banners · Siddha Maruthuvam">
+              <div class="work-img"><img src="assets/images/portfolio/portfolio-9.jpeg" alt="Siddha Wellness Banner — Siddha Maruthuvam" width="1024" height="572" loading="lazy"></div>
+              <div class="work-overlay"><span class="tag">Web Banners</span><div class="work-meta"><h5>Siddha Wellness Banner</h5><small>Siddha Maruthuvam</small></div></div>
+            </a>
+          </div>
+
+          <div class="grid-item festival">
+            <a href="assets/images/portfolio/portfolio-10.jpeg" class="work-card glightbox" data-gallery="portfolio" data-title="Happy Diwali" data-description="Festival Posts · Besta Tech">
+              <div class="work-img"><img src="assets/images/portfolio/portfolio-10.jpeg" alt="Happy Diwali — Besta Tech" width="1080" height="1354" loading="lazy"></div>
+              <div class="work-overlay"><span class="tag">Festival Posts</span><div class="work-meta"><h5>Happy Diwali</h5><small>Besta Tech</small></div></div>
+            </a>
+          </div>
+
+          <div class="grid-item festival">
+            <a href="assets/images/portfolio/portfolio-11.jpeg" class="work-card glightbox" data-gallery="portfolio" data-title="Happy Ayudha Pooja" data-description="Festival Posts · Vaithiyar Poova">
+              <div class="work-img"><img src="assets/images/portfolio/portfolio-11.jpeg" alt="Happy Ayudha Pooja — Vaithiyar Poova" width="1080" height="1080" loading="lazy"></div>
+              <div class="work-overlay"><span class="tag">Festival Posts</span><div class="work-meta"><h5>Happy Ayudha Pooja</h5><small>Vaithiyar Poova</small></div></div>
+            </a>
+          </div>
+
+          <div class="grid-item festival">
+            <a href="assets/images/portfolio/portfolio-12.jpeg" class="work-card glightbox" data-gallery="portfolio" data-title="World Students' Day" data-description="Festival Posts · Besta Tech">
+              <div class="work-img"><img src="assets/images/portfolio/portfolio-12.jpeg" alt="World Students' Day — Besta Tech" width="1254" height="1254" loading="lazy"></div>
+              <div class="work-overlay"><span class="tag">Festival Posts</span><div class="work-meta"><h5>World Students' Day</h5><small>Besta Tech</small></div></div>
+            </a>
+          </div>
+
+          <div class="grid-item festival">
+            <a href="assets/images/portfolio/portfolio-13.jpeg" class="work-card glightbox" data-gallery="portfolio" data-title="Happy Ayudha Pooja" data-description="Festival Posts · Besta Tech">
+              <div class="work-img"><img src="assets/images/portfolio/portfolio-13.jpeg" alt="Happy Ayudha Pooja — Besta Tech" width="1254" height="1254" loading="lazy"></div>
+              <div class="work-overlay"><span class="tag">Festival Posts</span><div class="work-meta"><h5>Happy Ayudha Pooja</h5><small>Besta Tech</small></div></div>
+            </a>
+          </div>
+
+          <div class="grid-item festival">
+            <a href="assets/images/portfolio/portfolio-14.jpeg" class="work-card glightbox" data-gallery="portfolio" data-title="Indian Air Force Day" data-description="Festival Posts · Gramiyam">
+              <div class="work-img"><img src="assets/images/portfolio/portfolio-14.jpeg" alt="Indian Air Force Day — Gramiyam" width="1254" height="1254" loading="lazy"></div>
+              <div class="work-overlay"><span class="tag">Festival Posts</span><div class="work-meta"><h5>Indian Air Force Day</h5><small>Gramiyam</small></div></div>
+            </a>
+          </div>
+
+          <div class="grid-item festival">
+            <a href="assets/images/portfolio/portfolio-15.jpeg" class="work-card glightbox" data-gallery="portfolio" data-title="Gandhi Jayanthi" data-description="Festival Posts · Besta Tech">
+              <div class="work-img"><img src="assets/images/portfolio/portfolio-15.jpeg" alt="Gandhi Jayanthi — Besta Tech" width="1254" height="1254" loading="lazy"></div>
+              <div class="work-overlay"><span class="tag">Festival Posts</span><div class="work-meta"><h5>Gandhi Jayanthi</h5><small>Besta Tech</small></div></div>
+            </a>
+          </div>
+
+          <div class="grid-item print">
+            <a href="assets/images/portfolio/portfolio-16.jpeg" class="work-card glightbox" data-gallery="portfolio" data-title="Store Signboard" data-description="Print &amp; Signage · Gramiyam">
+              <div class="work-img"><img src="assets/images/portfolio/portfolio-16.jpeg" alt="Store Signboard — Gramiyam" width="1021" height="1280" loading="lazy"></div>
+              <div class="work-overlay"><span class="tag">Print &amp; Signage</span><div class="work-meta"><h5>Store Signboard</h5><small>Gramiyam</small></div></div>
+            </a>
+          </div>
+
+          <div class="grid-item festival">
+            <a href="assets/images/portfolio/portfolio-17.jpeg" class="work-card glightbox" data-gallery="portfolio" data-title="Indian Air Force Day" data-description="Festival Posts · Besta Tech">
+              <div class="work-img"><img src="assets/images/portfolio/portfolio-17.jpeg" alt="Indian Air Force Day — Besta Tech" width="1024" height="1024" loading="lazy"></div>
+              <div class="work-overlay"><span class="tag">Festival Posts</span><div class="work-meta"><h5>Indian Air Force Day</h5><small>Besta Tech</small></div></div>
+            </a>
+          </div>
+
+          <div class="grid-item festival">
+            <a href="assets/images/portfolio/portfolio-18.jpeg" class="work-card glightbox" data-gallery="portfolio" data-title="Ayudha &amp; Saraswathi Pooja" data-description="Festival Posts · Besta Tech">
+              <div class="work-img"><img src="assets/images/portfolio/portfolio-18.jpeg" alt="Ayudha &amp; Saraswathi Pooja — Besta Tech" width="1254" height="1254" loading="lazy"></div>
+              <div class="work-overlay"><span class="tag">Festival Posts</span><div class="work-meta"><h5>Ayudha &amp; Saraswathi Pooja</h5><small>Besta Tech</small></div></div>
+            </a>
+          </div>
+
+          <div class="grid-item packaging">
+            <a href="assets/images/portfolio/portfolio-19.jpeg" class="work-card glightbox" data-gallery="portfolio" data-title="Herbal Soap Box" data-description="Packaging · Gramiyam">
+              <div class="work-img"><img src="assets/images/portfolio/portfolio-19.jpeg" alt="Herbal Soap Box — Gramiyam" width="1254" height="1254" loading="lazy"></div>
+              <div class="work-overlay"><span class="tag">Packaging</span><div class="work-meta"><h5>Herbal Soap Box</h5><small>Gramiyam</small></div></div>
+            </a>
+          </div>
+
+          <div class="grid-item festival">
+            <a href="assets/images/portfolio/portfolio-20.jpeg" class="work-card glightbox" data-gallery="portfolio" data-title="Ayudha &amp; Saraswathi Pooja" data-description="Festival Posts · Besta Tech">
+              <div class="work-img"><img src="assets/images/portfolio/portfolio-20.jpeg" alt="Ayudha &amp; Saraswathi Pooja — Besta Tech" width="1254" height="1254" loading="lazy"></div>
+              <div class="work-overlay"><span class="tag">Festival Posts</span><div class="work-meta"><h5>Ayudha &amp; Saraswathi Pooja</h5><small>Besta Tech</small></div></div>
+            </a>
+          </div>
+
+          <div class="grid-item festival">
+            <a href="assets/images/portfolio/portfolio-21.jpeg" class="work-card glightbox" data-gallery="portfolio" data-title="Happy Vijayadashami" data-description="Festival Posts · Besta Tech">
+              <div class="work-img"><img src="assets/images/portfolio/portfolio-21.jpeg" alt="Happy Vijayadashami — Besta Tech" width="1020" height="1280" loading="lazy"></div>
+              <div class="work-overlay"><span class="tag">Festival Posts</span><div class="work-meta"><h5>Happy Vijayadashami</h5><small>Besta Tech</small></div></div>
+            </a>
+          </div>
+
+          <div class="grid-item social">
+            <a href="assets/images/portfolio/portfolio-22.jpeg" class="work-card glightbox" data-gallery="portfolio" data-title="Office Break" data-description="Product Ads · Mr. Bites">
+              <div class="work-img"><img src="assets/images/portfolio/portfolio-22.jpeg" alt="Office Break — Mr. Bites" width="1254" height="1254" loading="lazy"></div>
+              <div class="work-overlay"><span class="tag">Product Ads</span><div class="work-meta"><h5>Office Break</h5><small>Mr. Bites</small></div></div>
+            </a>
+          </div>
+
+          <div class="grid-item social">
+            <a href="assets/images/portfolio/portfolio-23.jpeg" class="work-card glightbox" data-gallery="portfolio" data-title="A Day in the Life of Your Coffee" data-description="Product Ads · Leo Coffee">
+              <div class="work-img"><img src="assets/images/portfolio/portfolio-23.jpeg" alt="A Day in the Life of Your Coffee — Leo Coffee" width="1254" height="1254" loading="lazy"></div>
+              <div class="work-overlay"><span class="tag">Product Ads</span><div class="work-meta"><h5>A Day in the Life of Your Coffee</h5><small>Leo Coffee</small></div></div>
+            </a>
+          </div>
+
+          <div class="grid-item social">
+            <a href="assets/images/portfolio/portfolio-24.jpeg" class="work-card glightbox" data-gallery="portfolio" data-title="Small Bites, Big Flavour" data-description="Product Ads · Mr. Bites">
+              <div class="work-img"><img src="assets/images/portfolio/portfolio-24.jpeg" alt="Small Bites, Big Flavour — Mr. Bites" width="1104" height="1280" loading="lazy"></div>
+              <div class="work-overlay"><span class="tag">Product Ads</span><div class="work-meta"><h5>Small Bites, Big Flavour</h5><small>Mr. Bites</small></div></div>
+            </a>
+          </div>
+
+          <div class="grid-item social">
+            <a href="assets/images/portfolio/portfolio-25.jpeg" class="work-card glightbox" data-gallery="portfolio" data-title="A Day in the Life of Your Coffee" data-description="Product Ads · Leo Coffee">
+              <div class="work-img"><img src="assets/images/portfolio/portfolio-25.jpeg" alt="A Day in the Life of Your Coffee — Leo Coffee" width="1102" height="1280" loading="lazy"></div>
+              <div class="work-overlay"><span class="tag">Product Ads</span><div class="work-meta"><h5>A Day in the Life of Your Coffee</h5><small>Leo Coffee</small></div></div>
+            </a>
+          </div>
+
+          <div class="grid-item social">
+            <a href="assets/images/portfolio/portfolio-26.jpeg" class="work-card glightbox" data-gallery="portfolio" data-title="We Are Hiring" data-description="Product Ads · Sri Vari Super Mart">
+              <div class="work-img"><img src="assets/images/portfolio/portfolio-26.jpeg" alt="We Are Hiring — Sri Vari Super Mart" width="720" height="720" loading="lazy"></div>
+              <div class="work-overlay"><span class="tag">Product Ads</span><div class="work-meta"><h5>We Are Hiring</h5><small>Sri Vari Super Mart</small></div></div>
+            </a>
+          </div>
+
+          <div class="grid-item social">
+            <a href="assets/images/portfolio/portfolio-27.jpeg" class="work-card glightbox" data-gallery="portfolio" data-title="Pineapple Egg Biscuits" data-description="Product Ads · Mr. Bites">
+              <div class="work-img"><img src="assets/images/portfolio/portfolio-27.jpeg" alt="Pineapple Egg Biscuits — Mr. Bites" width="1057" height="1280" loading="lazy"></div>
+              <div class="work-overlay"><span class="tag">Product Ads</span><div class="work-meta"><h5>Pineapple Egg Biscuits</h5><small>Mr. Bites</small></div></div>
+            </a>
+          </div>
+
+          <div class="grid-item social">
+            <a href="assets/images/portfolio/portfolio-28.jpeg" class="work-card glightbox" data-gallery="portfolio" data-title="Freshly Baked Cookies" data-description="Product Ads · Mr. Bites">
+              <div class="work-img"><img src="assets/images/portfolio/portfolio-28.jpeg" alt="Freshly Baked Cookies — Mr. Bites" width="1102" height="1280" loading="lazy"></div>
+              <div class="work-overlay"><span class="tag">Product Ads</span><div class="work-meta"><h5>Freshly Baked Cookies</h5><small>Mr. Bites</small></div></div>
+            </a>
+          </div>
+
+          <div class="grid-item social">
+            <a href="assets/images/portfolio/portfolio-29.jpeg" class="work-card glightbox" data-gallery="portfolio" data-title="Tough on Stains" data-description="Product Ads · First Choice">
+              <div class="work-img"><img src="assets/images/portfolio/portfolio-29.jpeg" alt="Tough on Stains — First Choice" width="1024" height="1280" loading="lazy"></div>
+              <div class="work-overlay"><span class="tag">Product Ads</span><div class="work-meta"><h5>Tough on Stains</h5><small>First Choice</small></div></div>
+            </a>
+          </div>
+
+          <div class="grid-item social">
+            <a href="assets/images/portfolio/portfolio-30.jpeg" class="work-card glightbox" data-gallery="portfolio" data-title="After Every Mission" data-description="Product Ads · First Choice">
+              <div class="work-img"><img src="assets/images/portfolio/portfolio-30.jpeg" alt="After Every Mission — First Choice" width="1254" height="1254" loading="lazy"></div>
+              <div class="work-overlay"><span class="tag">Product Ads</span><div class="work-meta"><h5>After Every Mission</h5><small>First Choice</small></div></div>
+            </a>
+          </div>
+
+          <div class="grid-item social">
+            <a href="assets/images/portfolio/portfolio-31.jpeg" class="work-card glightbox" data-gallery="portfolio" data-title="Filter Coffee" data-description="Product Ads · Leo Coffee">
+              <div class="work-img"><img src="assets/images/portfolio/portfolio-31.jpeg" alt="Filter Coffee — Leo Coffee" width="1026" height="1280" loading="lazy"></div>
+              <div class="work-overlay"><span class="tag">Product Ads</span><div class="work-meta"><h5>Filter Coffee</h5><small>Leo Coffee</small></div></div>
+            </a>
+          </div>
+
+          <div class="grid-item print">
+            <a href="assets/images/portfolio/portfolio-32.jpeg" class="work-card glightbox" data-gallery="portfolio" data-title="Press Ad" data-description="Print &amp; Signage · Agri Doctor &amp; Bhagyam">
+              <div class="work-img"><img src="assets/images/portfolio/portfolio-32.jpeg" alt="Press Ad — Agri Doctor &amp; Bhagyam" width="1063" height="591" loading="lazy"></div>
+              <div class="work-overlay"><span class="tag">Print &amp; Signage</span><div class="work-meta"><h5>Press Ad</h5><small>Agri Doctor &amp; Bhagyam</small></div></div>
+            </a>
+          </div>
+
+          <div class="grid-item print">
+            <a href="assets/images/portfolio/portfolio-33.jpeg" class="work-card glightbox" data-gallery="portfolio" data-title="Press Ad" data-description="Print &amp; Signage · Kalyan Jewellers">
+              <div class="work-img"><img src="assets/images/portfolio/portfolio-33.jpeg" alt="Press Ad — Kalyan Jewellers" width="1280" height="891" loading="lazy"></div>
+              <div class="work-overlay"><span class="tag">Print &amp; Signage</span><div class="work-meta"><h5>Press Ad</h5><small>Kalyan Jewellers</small></div></div>
+            </a>
+          </div>
+
+          <div class="grid-item print">
+            <a href="assets/images/portfolio/portfolio-34.jpeg" class="work-card glightbox" data-gallery="portfolio" data-title="Do Not Park in Restricted Areas" data-description="Print &amp; Signage · Kalyan Jewellers">
+              <div class="work-img"><img src="assets/images/portfolio/portfolio-34.jpeg" alt="Do Not Park in Restricted Areas — Kalyan Jewellers" width="1280" height="1280" loading="lazy"></div>
+              <div class="work-overlay"><span class="tag">Print &amp; Signage</span><div class="work-meta"><h5>Do Not Park in Restricted Areas</h5><small>Kalyan Jewellers</small></div></div>
+            </a>
+          </div>
+
+          <div class="grid-item print">
+            <a href="assets/images/portfolio/portfolio-35.jpeg" class="work-card glightbox" data-gallery="portfolio" data-title="Keep the Temple Clean" data-description="Print &amp; Signage · Kalyan Jewellers">
+              <div class="work-img"><img src="assets/images/portfolio/portfolio-35.jpeg" alt="Keep the Temple Clean — Kalyan Jewellers" width="1280" height="1280" loading="lazy"></div>
+              <div class="work-overlay"><span class="tag">Print &amp; Signage</span><div class="work-meta"><h5>Keep the Temple Clean</h5><small>Kalyan Jewellers</small></div></div>
+            </a>
+          </div>
+
+          <div class="grid-item print">
+            <a href="assets/images/portfolio/portfolio-36.jpeg" class="work-card glightbox" data-gallery="portfolio" data-title="Park Your Vehicle Properly" data-description="Print &amp; Signage · Kalyan Jewellers">
+              <div class="work-img"><img src="assets/images/portfolio/portfolio-36.jpeg" alt="Park Your Vehicle Properly — Kalyan Jewellers" width="1280" height="1280" loading="lazy"></div>
+              <div class="work-overlay"><span class="tag">Print &amp; Signage</span><div class="work-meta"><h5>Park Your Vehicle Properly</h5><small>Kalyan Jewellers</small></div></div>
+            </a>
+          </div>
+
+          <div class="grid-item print">
+            <a href="assets/images/portfolio/portfolio-38.jpeg" class="work-card glightbox" data-gallery="portfolio" data-title="Follow the Speed Limit" data-description="Print &amp; Signage · Kalyan Jewellers">
+              <div class="work-img"><img src="assets/images/portfolio/portfolio-38.jpeg" alt="Follow the Speed Limit — Kalyan Jewellers" width="984" height="973" loading="lazy"></div>
+              <div class="work-overlay"><span class="tag">Print &amp; Signage</span><div class="work-meta"><h5>Follow the Speed Limit</h5><small>Kalyan Jewellers</small></div></div>
+            </a>
+          </div>
+
+          <div class="grid-item print">
+            <a href="assets/images/portfolio/portfolio-39.jpeg" class="work-card glightbox" data-gallery="portfolio" data-title="No Continuous Honking" data-description="Print &amp; Signage · Kalyan Jewellers">
+              <div class="work-img"><img src="assets/images/portfolio/portfolio-39.jpeg" alt="No Continuous Honking — Kalyan Jewellers" width="1280" height="1280" loading="lazy"></div>
+              <div class="work-overlay"><span class="tag">Print &amp; Signage</span><div class="work-meta"><h5>No Continuous Honking</h5><small>Kalyan Jewellers</small></div></div>
+            </a>
+          </div>
+
+          <div class="grid-item print">
+            <a href="assets/images/portfolio/portfolio-40.jpeg" class="work-card glightbox" data-gallery="portfolio" data-title="Keep the Pathway Clear" data-description="Print &amp; Signage · Kalyan Jewellers">
+              <div class="work-img"><img src="assets/images/portfolio/portfolio-40.jpeg" alt="Keep the Pathway Clear — Kalyan Jewellers" width="1280" height="1280" loading="lazy"></div>
+              <div class="work-overlay"><span class="tag">Print &amp; Signage</span><div class="work-meta"><h5>Keep the Pathway Clear</h5><small>Kalyan Jewellers</small></div></div>
+            </a>
+          </div>
+
+          <div class="grid-item print">
+            <a href="assets/images/portfolio/portfolio-41.jpeg" class="work-card glightbox" data-gallery="portfolio" data-title="Drive Slowly" data-description="Print &amp; Signage · Kalyan Jewellers">
+              <div class="work-img"><img src="assets/images/portfolio/portfolio-41.jpeg" alt="Drive Slowly — Kalyan Jewellers" width="986" height="981" loading="lazy"></div>
+              <div class="work-overlay"><span class="tag">Print &amp; Signage</span><div class="work-meta"><h5>Drive Slowly</h5><small>Kalyan Jewellers</small></div></div>
+            </a>
+          </div>
+
+          <div class="grid-item print">
+            <a href="assets/images/portfolio/portfolio-42.jpeg" class="work-card glightbox" data-gallery="portfolio" data-title="Use Horn Only When Necessary" data-description="Print &amp; Signage · Kalyan Jewellers">
+              <div class="work-img"><img src="assets/images/portfolio/portfolio-42.jpeg" alt="Use Horn Only When Necessary — Kalyan Jewellers" width="1280" height="1280" loading="lazy"></div>
+              <div class="work-overlay"><span class="tag">Print &amp; Signage</span><div class="work-meta"><h5>Use Horn Only When Necessary</h5><small>Kalyan Jewellers</small></div></div>
+            </a>
+          </div>
+
+          <div class="grid-item social">
+            <a href="assets/images/portfolio/portfolio-43.jpeg" class="work-card glightbox" data-gallery="portfolio" data-title="Srivari Super Mart Flag" data-description="Product Ads · Srivari Super Mart">
+              <div class="work-img"><img src="assets/images/portfolio/portfolio-43.jpeg" alt="Srivari Super Mart Flag — Srivari Super Mart" width="1164" height="1280" loading="lazy"></div>
+              <div class="work-overlay"><span class="tag">Product Ads</span><div class="work-meta"><h5>Srivari Super Mart Flag</h5><small>Srivari Super Mart</small></div></div>
+            </a>
+          </div>
+          <div class="grid-item festival">
+            <a href="assets/images/portfolio/portfolio-44.jpeg" class="work-card glightbox" data-gallery="portfolio" data-title="Happy Gandhi Jayanti" data-description="Festival Posts · Gramiyam">
+              <div class="work-img"><img src="assets/images/portfolio/portfolio-44.jpeg" alt="Happy Gandhi Jayanti — Gramiyam" width="1080" height="1080" loading="lazy"></div>
+              <div class="work-overlay"><span class="tag">Festival Posts</span><div class="work-meta"><h5>Happy Gandhi Jayanti</h5><small>Gramiyam</small></div></div>
+            </a>
+          </div>
+
+          <div class="grid-item social">
+            <a href="assets/images/portfolio/portfolio-45.jpeg" class="work-card glightbox" data-gallery="portfolio" data-title="Triple Sakthi Combo" data-description="Product Ads · Gramiyam">
+              <div class="work-img"><img src="assets/images/portfolio/portfolio-45.jpeg" alt="Triple Sakthi Combo — Gramiyam" width="1254" height="1254" loading="lazy"></div>
+              <div class="work-overlay"><span class="tag">Product Ads</span><div class="work-meta"><h5>Triple Sakthi Combo</h5><small>Gramiyam</small></div></div>
+            </a>
+          </div>
+
+          <div class="grid-item print">
+            <a href="assets/images/portfolio/portfolio-46.jpeg" class="work-card glightbox" data-gallery="portfolio" data-title="Pooja Poster" data-description="Print &amp; Signage · Kandha Peedam">
+              <div class="work-img"><img src="assets/images/portfolio/portfolio-46.jpeg" alt="Pooja Poster — Kandha Peedam" width="600" height="720" loading="lazy"></div>
+              <div class="work-overlay"><span class="tag">Print &amp; Signage</span><div class="work-meta"><h5>Pooja Poster</h5><small>Kandha Peedam</small></div></div>
+            </a>
+          </div>
+
+          <div class="grid-item logo">
+            <a href="assets/images/portfolio/portfolio-47.jpeg" class="work-card glightbox" data-gallery="portfolio" data-title="Logo Concept 1" data-description="Logo Design · Firsta Technology">
+              <div class="work-img"><img src="assets/images/portfolio/portfolio-47.jpeg" alt="Logo Concept 1 — Firsta Technology" width="1246" height="589" loading="lazy"></div>
+              <div class="work-overlay"><span class="tag">Logo Design</span><div class="work-meta"><h5>Logo Concept 1</h5><small>Firsta Technology</small></div></div>
+            </a>
+          </div>
+
+          <div class="grid-item logo">
+            <a href="assets/images/portfolio/portfolio-48.jpeg" class="work-card glightbox" data-gallery="portfolio" data-title="Logo Concept 2" data-description="Logo Design · Firsta Technology">
+              <div class="work-img"><img src="assets/images/portfolio/portfolio-48.jpeg" alt="Logo Concept 2 — Firsta Technology" width="766" height="376" loading="lazy"></div>
+              <div class="work-overlay"><span class="tag">Logo Design</span><div class="work-meta"><h5>Logo Concept 2</h5><small>Firsta Technology</small></div></div>
+            </a>
+          </div>
+
+          <div class="grid-item logo">
+            <a href="assets/images/portfolio/portfolio-49.jpeg" class="work-card glightbox" data-gallery="portfolio" data-title="Chemical MD Logo" data-description="Logo Design · Chemical MD">
+              <div class="work-img"><img src="assets/images/portfolio/portfolio-49.jpeg" alt="Chemical MD Logo — Chemical MD" width="328" height="350" loading="lazy"></div>
+              <div class="work-overlay"><span class="tag">Logo Design</span><div class="work-meta"><h5>Chemical MD Logo</h5><small>Chemical MD</small></div></div>
+            </a>
+          </div>
+
+          <div class="grid-item social">
+            <a href="assets/images/portfolio/portfolio-50.jpeg" class="work-card glightbox" data-gallery="portfolio" data-title="Triple Sakthi — Buy 1 Get 1" data-description="Product Ads · Gramiyam">
+              <div class="work-img"><img src="assets/images/portfolio/portfolio-50.jpeg" alt="Triple Sakthi — Buy 1 Get 1 — Gramiyam" width="1254" height="1254" loading="lazy"></div>
+              <div class="work-overlay"><span class="tag">Product Ads</span><div class="work-meta"><h5>Triple Sakthi — Buy 1 Get 1</h5><small>Gramiyam</small></div></div>
+            </a>
+          </div>
+
+          <div class="grid-item festival">
+            <a href="assets/images/portfolio/portfolio-51.jpeg" class="work-card glightbox" data-gallery="portfolio" data-title="Gandhi Jayanti" data-description="Festival Posts · Vaithiyar Poova">
+              <div class="work-img"><img src="assets/images/portfolio/portfolio-51.jpeg" alt="Gandhi Jayanti — Vaithiyar Poova" width="1080" height="1080" loading="lazy"></div>
+              <div class="work-overlay"><span class="tag">Festival Posts</span><div class="work-meta"><h5>Gandhi Jayanti</h5><small>Vaithiyar Poova</small></div></div>
+            </a>
+          </div>
+
+          <div class="grid-item social">
+            <a href="assets/images/portfolio/portfolio-52.jpeg" class="work-card glightbox" data-gallery="portfolio" data-title="Triple Sakthi for the Family" data-description="Product Ads · Gramiyam">
+              <div class="work-img"><img src="assets/images/portfolio/portfolio-52.jpeg" alt="Triple Sakthi for the Family — Gramiyam" width="1254" height="1254" loading="lazy"></div>
+              <div class="work-overlay"><span class="tag">Product Ads</span><div class="work-meta"><h5>Triple Sakthi for the Family</h5><small>Gramiyam</small></div></div>
+            </a>
+          </div>
+
+          <div class="grid-item festival">
+            <a href="assets/images/portfolio/portfolio-53.jpeg" class="work-card glightbox" data-gallery="portfolio" data-title="Happy Gandhi Jayanti" data-description="Festival Posts · Besta Tech">
+              <div class="work-img"><img src="assets/images/portfolio/portfolio-53.jpeg" alt="Happy Gandhi Jayanti — Besta Tech" width="1254" height="1254" loading="lazy"></div>
+              <div class="work-overlay"><span class="tag">Festival Posts</span><div class="work-meta"><h5>Happy Gandhi Jayanti</h5><small>Besta Tech</small></div></div>
+            </a>
+          </div>
+
+          <div class="grid-item print">
+            <a href="assets/images/portfolio/portfolio-54.jpeg" class="work-card glightbox" data-gallery="portfolio" data-title="Temple Pooja Poster" data-description="Print &amp; Signage · Kandha Peedam">
+              <div class="work-img"><img src="assets/images/portfolio/portfolio-54.jpeg" alt="Temple Pooja Poster — Kandha Peedam" width="600" height="970" loading="lazy"></div>
+              <div class="work-overlay"><span class="tag">Print &amp; Signage</span><div class="work-meta"><h5>Temple Pooja Poster</h5><small>Kandha Peedam</small></div></div>
+            </a>
+          </div>
+
+          <div class="grid-item logo">
+            <a href="assets/images/portfolio/portfolio-55.jpeg" class="work-card glightbox" data-gallery="portfolio" data-title="Logo Concept 3" data-description="Logo Design · Firsta Technology">
+              <div class="work-img"><img src="assets/images/portfolio/portfolio-55.jpeg" alt="Logo Concept 3 — Firsta Technology" width="783" height="373" loading="lazy"></div>
+              <div class="work-overlay"><span class="tag">Logo Design</span><div class="work-meta"><h5>Logo Concept 3</h5><small>Firsta Technology</small></div></div>
+            </a>
+          </div>
+
+          <div class="grid-item print">
+            <a href="assets/images/portfolio/portfolio-56.jpeg" class="work-card glightbox" data-gallery="portfolio" data-title="Pooja Poster — Alt" data-description="Print &amp; Signage · Kandha Peedam">
+              <div class="work-img"><img src="assets/images/portfolio/portfolio-56.jpeg" alt="Pooja Poster — Alt — Kandha Peedam" width="853" height="1280" loading="lazy"></div>
+              <div class="work-overlay"><span class="tag">Print &amp; Signage</span><div class="work-meta"><h5>Pooja Poster — Alt</h5><small>Kandha Peedam</small></div></div>
+            </a>
+          </div>
+
+          <div class="grid-item logo">
+            <a href="assets/images/portfolio/portfolio-57.jpeg" class="work-card glightbox" data-gallery="portfolio" data-title="Chemical Logo Concept" data-description="Logo Design · MD Chemical">
+              <div class="work-img"><img src="assets/images/portfolio/portfolio-57.jpeg" alt="Chemical Logo Concept — MD Chemical" width="442" height="533" loading="lazy"></div>
+              <div class="work-overlay"><span class="tag">Logo Design</span><div class="work-meta"><h5>Chemical Logo Concept</h5><small>MD Chemical</small></div></div>
+            </a>
+          </div>
+
+          <div class="grid-item logo">
+            <a href="assets/images/portfolio/portfolio-58.jpeg" class="work-card glightbox" data-gallery="portfolio" data-title="Logo Concept 4" data-description="Logo Design · Firsta Technology">
+              <div class="work-img"><img src="assets/images/portfolio/portfolio-58.jpeg" alt="Logo Concept 4 — Firsta Technology" width="1129" height="663" loading="lazy"></div>
+              <div class="work-overlay"><span class="tag">Logo Design</span><div class="work-meta"><h5>Logo Concept 4</h5><small>Firsta Technology</small></div></div>
+            </a>
+          </div>
+
+          <div class="grid-item social">
+            <a href="assets/images/portfolio/portfolio-59.jpeg" class="work-card glightbox" data-gallery="portfolio" data-title="Fuel Your Day the Nutty Way" data-description="Product Ads · Nut King">
+              <div class="work-img"><img src="assets/images/portfolio/portfolio-59.jpeg" alt="Fuel Your Day the Nutty Way — Nut King" width="735" height="884" loading="lazy"></div>
+              <div class="work-overlay"><span class="tag">Product Ads</span><div class="work-meta"><h5>Fuel Your Day the Nutty Way</h5><small>Nut King</small></div></div>
+            </a>
+          </div>
+
+          <div class="grid-item social">
+            <a href="assets/images/portfolio/portfolio-60.jpeg" class="work-card glightbox" data-gallery="portfolio" data-title="Doce de Leite" data-description="Product Ads · Product Ad">
+              <div class="work-img"><img src="assets/images/portfolio/portfolio-60.jpeg" alt="Doce de Leite — Product Ad" width="1080" height="1350" loading="lazy"></div>
+              <div class="work-overlay"><span class="tag">Product Ads</span><div class="work-meta"><h5>Doce de Leite</h5><small>Product Ad</small></div></div>
+            </a>
+          </div>
+
+          <div class="grid-item social">
+            <a href="assets/images/portfolio/portfolio-61.jpeg" class="work-card glightbox" data-gallery="portfolio" data-title="Get Panipuri With Me?" data-description="Product Ads · Social Post">
+              <div class="work-img"><img src="assets/images/portfolio/portfolio-61.jpeg" alt="Get Panipuri With Me? — Social Post" width="1080" height="1308" loading="lazy"></div>
+              <div class="work-overlay"><span class="tag">Product Ads</span><div class="work-meta"><h5>Get Panipuri With Me?</h5><small>Social Post</small></div></div>
+            </a>
+          </div>
+
+          <div class="grid-item social">
+            <a href="assets/images/portfolio/portfolio-62.jpeg" class="work-card glightbox" data-gallery="portfolio" data-title="Hair Care Range" data-description="Product Ads · GK Hair">
+              <div class="work-img"><img src="assets/images/portfolio/portfolio-62.jpeg" alt="Hair Care Range — GK Hair" width="736" height="736" loading="lazy"></div>
+              <div class="work-overlay"><span class="tag">Product Ads</span><div class="work-meta"><h5>Hair Care Range</h5><small>GK Hair</small></div></div>
+            </a>
+          </div>
+
+          <div class="grid-item social">
+            <a href="assets/images/portfolio/portfolio-63.jpeg" class="work-card glightbox" data-gallery="portfolio" data-title="Chai Chai — ₹10" data-description="Product Ads · Tea Stall">
+              <div class="work-img"><img src="assets/images/portfolio/portfolio-63.jpeg" alt="Chai Chai — ₹10 — Tea Stall" width="736" height="919" loading="lazy"></div>
+              <div class="work-overlay"><span class="tag">Product Ads</span><div class="work-meta"><h5>Chai Chai — ₹10</h5><small>Tea Stall</small></div></div>
+            </a>
+          </div>
+
+          <div class="grid-item social">
+            <a href="assets/images/portfolio/portfolio-64.jpeg" class="work-card glightbox" data-gallery="portfolio" data-title="Smile, It's Tea Time" data-description="Product Ads · Tea Stall">
+              <div class="work-img"><img src="assets/images/portfolio/portfolio-64.jpeg" alt="Smile, It's Tea Time — Tea Stall" width="1200" height="1500" loading="lazy"></div>
+              <div class="work-overlay"><span class="tag">Product Ads</span><div class="work-meta"><h5>Smile, It's Tea Time</h5><small>Tea Stall</small></div></div>
+            </a>
+          </div>
+
+          <div class="grid-item logo">
+            <a href="assets/images/portfolio/portfolio-65.jpeg" class="work-card glightbox" data-gallery="portfolio" data-title="Dealio Wordmark" data-description="Logo Design · Dealio">
+              <div class="work-img"><img src="assets/images/portfolio/portfolio-65.jpeg" alt="Dealio Wordmark — Dealio" width="640" height="640" loading="lazy"></div>
+              <div class="work-overlay"><span class="tag">Logo Design</span><div class="work-meta"><h5>Dealio Wordmark</h5><small>Dealio</small></div></div>
+            </a>
+          </div>
+
+          <div class="grid-item logo">
+            <a href="assets/images/portfolio/portfolio-66.jpeg" class="work-card glightbox" data-gallery="portfolio" data-title="B Monogram" data-description="Logo Design · Logo Concept">
+              <div class="work-img"><img src="assets/images/portfolio/portfolio-66.jpeg" alt="B Monogram — Logo Concept" width="800" height="1200" loading="lazy"></div>
+              <div class="work-overlay"><span class="tag">Logo Design</span><div class="work-meta"><h5>B Monogram</h5><small>Logo Concept</small></div></div>
+            </a>
+          </div>
+
+          <div class="grid-item logo">
+            <a href="assets/images/portfolio/portfolio-67.jpeg" class="work-card glightbox" data-gallery="portfolio" data-title="Heart Mark" data-description="Logo Design · Logo Concept">
+              <div class="work-img"><img src="assets/images/portfolio/portfolio-67.jpeg" alt="Heart Mark — Logo Concept" width="1200" height="900" loading="lazy"></div>
+              <div class="work-overlay"><span class="tag">Logo Design</span><div class="work-meta"><h5>Heart Mark</h5><small>Logo Concept</small></div></div>
+            </a>
+          </div>
+
+          <div class="grid-item logo">
+            <a href="assets/images/portfolio/portfolio-68.jpeg" class="work-card glightbox" data-gallery="portfolio" data-title="Logo Concept 5" data-description="Logo Design · Firsta Technology">
+              <div class="work-img"><img src="assets/images/portfolio/portfolio-68.jpeg" alt="Logo Concept 5 — Firsta Technology" width="736" height="552" loading="lazy"></div>
+              <div class="work-overlay"><span class="tag">Logo Design</span><div class="work-meta"><h5>Logo Concept 5</h5><small>Firsta Technology</small></div></div>
+            </a>
+          </div>
+          <div class="grid-item social">
+            <a href="assets/images/portfolio/portfolio-69.jpeg" class="work-card glightbox" data-gallery="portfolio" data-title="Special Coffee" data-description="Product Ads · AVT">
+              <div class="work-img"><img src="assets/images/portfolio/portfolio-69.jpeg" alt="Special Coffee — AVT" width="1254" height="1254" loading="lazy"></div>
+              <div class="work-overlay"><span class="tag">Product Ads</span><div class="work-meta"><h5>Special Coffee</h5><small>AVT</small></div></div>
+            </a>
+          </div>
+
+          <div class="grid-item social">
+            <a href="assets/images/portfolio/portfolio-70.jpeg" class="work-card glightbox" data-gallery="portfolio" data-title="Nakshatra Pooja Oil Offer" data-description="Product Ads · Sri Vari Super Mart">
+              <div class="work-img"><img src="assets/images/portfolio/portfolio-70.jpeg" alt="Nakshatra Pooja Oil Offer — Sri Vari Super Mart" width="1254" height="1254" loading="lazy"></div>
+              <div class="work-overlay"><span class="tag">Product Ads</span><div class="work-meta"><h5>Nakshatra Pooja Oil Offer</h5><small>Sri Vari Super Mart</small></div></div>
+            </a>
+          </div>
+
+          <div class="grid-item social">
+            <a href="assets/images/portfolio/portfolio-71.jpeg" class="work-card glightbox" data-gallery="portfolio" data-title="Croissant — Happiness in Every Layer" data-description="Product Ads · Mr. Bites">
+              <div class="work-img"><img src="assets/images/portfolio/portfolio-71.jpeg" alt="Croissant — Mr. Bites" width="1024" height="1280" loading="lazy"></div>
+              <div class="work-overlay"><span class="tag">Product Ads</span><div class="work-meta"><h5>Croissant — Happiness in Every Layer</h5><small>Mr. Bites</small></div></div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CTA ================= -->
+    <section class="section-pad">
+      <div class="container">
+        <div class="cta-box" data-aos="zoom-in">
+          <span class="cta-circle c1"></span><span class="cta-circle c2"></span><span class="cta-circle c3"></span>
+          <h2>Like what you see?<br>Your project could be next.</h2>
+          <p>I take on a limited number of projects each month to give every client full attention.</p>
+          <a href="contact.html" class="btn-light-c magnetic">Book a Slot <i class="bi bi-arrow-up-right"></i></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer"></div>
+
+  <button class="back-to-top" aria-label="Back to top">
+    <svg viewBox="0 0 54 54">
+      <defs><linearGradient id="btGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#ff5e3a"/><stop offset="100%" stop-color="#7b5cff"/></linearGradient></defs>
+      <circle class="track" cx="27" cy="27" r="25"/>
+      <circle class="bt-progress" cx="27" cy="27" r="25"/>
+    </svg>
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <div class="toast-c"><i class="bi bi-check-circle-fill"></i><span class="toast-msg"></span></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/glightbox@3.3.0/dist/js/glightbox.min.js"></script>
+  <!-- Common nav (nav.html) + footer (footer.html), then main.js -->
+  <script>
+    const include = (id, file) =>
+      fetch(file)
+        .then((res) => res.text())
+        .then((html) => (document.getElementById(id).outerHTML = html));
+
+    Promise.allSettled([include("nav", "nav.html"), include("footer", "footer.html")]).then(() => {
+      // highlight the current page in the nav
+      const page = location.pathname.split("/").pop() || "index.html";
+      document.querySelectorAll(".site-nav .nav-link").forEach((link) => {
+        link.classList.toggle("active", link.getAttribute("href") === page);
+      });
+
+      const s = document.createElement("script");
+      s.src = "assets/js/main.js";
+      document.body.appendChild(s);
+    });
+  </script>
+</body>
+</html>
